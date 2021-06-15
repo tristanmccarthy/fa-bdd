@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>FAWebTest.Specs</AssemblyName>
+    <RootNamespace>FAWebTest.Specs</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\ManageBasket - Copy.feature.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.10.0" />
+	<PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.8.35" />
+	<PackageReference Include="SpecFlow.NUnit" Version="3.8.14" />
+	<PackageReference Include="nunit" Version="3.13.2" />
+	<PackageReference Include="NUnit3TestAdapter" Version="4.0.0" />
+	<PackageReference Include="FluentAssertions" Version="5.10.3" />
+
+
+	<PackageReference Include="Selenium.Support" Version="3.141.0" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="91.0.4472.10100" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Drivers\" />
+  </ItemGroup>
+
+</Project>

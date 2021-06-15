@@ -1,0 +1,10 @@
+pool:
+  vmImage: 'windows-latest'
+
+steps:
+- task: PowerShell@2
+  inputs:
+    targetType: 'filePath'
+    filePath: $(System.DefaultWorkingDirectory)\buildandtest.ps1
+    ignoreLASTEXITCODE: false
+  displayName: 'Build Example solutions and run tests'
